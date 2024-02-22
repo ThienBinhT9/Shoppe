@@ -1,0 +1,32 @@
+.wrapper{
+    height: 200px;
+    margin-bottom: 20px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.title{
+    color: var(--main-color);
+    font-weight: 400;
+    margin-bottom: 16px;
+
+}
+
+.current__page{
+    display: flex;
+    align-items: center;
+
+    .current__page__item{
+        font-size: 15px;
+        margin-right: 12px;
+    }
+
+    svg{
+        font-size: 10px !important;
+    }
+}

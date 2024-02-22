@@ -1,0 +1,134 @@
+.wrapper{
+
+
+}
+
+.inner{
+    width: 85%;
+    margin: 0 auto;
+    display: flex;
+
+    @media (max-width:1024px) {
+        width: 95%;
+        flex-direction: column;
+    }
+
+    @media (max-width:740px) {
+        width: 100%;
+    }
+
+    .content__left{
+        width: 50%;
+
+        @media (max-width:1024px) {
+            width: 100%;
+        }
+
+        @media (max-width:740px) {
+            padding: 0 12px;
+        }
+    }
+
+    .content__right{
+        width: 50%;
+        padding: 0 18px;
+        height: 100%;
+
+        @media (max-width:1024px) {
+            width: 100%;
+        }
+
+        @media (max-width:740px) {
+            padding: 0 12px;
+        }
+
+        .gmap_iframe{
+            width: 100%;
+            height: 600px;
+        }
+    }
+
+    .content__left__section{
+        margin-bottom: 36px;
+
+        .content__left__title{
+            font-size: 18px;
+            font-weight: 600;
+            margin-bottom: 12px;
+        }
+
+        .content__left__subtitle{
+            font-size: 14.5px;
+            line-height: 1.5;
+            margin-bottom: 24px;
+        }
+
+        .content__left__info{
+            display: flex;
+            flex-wrap: wrap;
+
+            .content__left__info__item{
+                width: 50%;
+                padding: 0 6px;
+                display: flex;
+                align-items: center;
+                margin-bottom: 12px;
+
+                .content__left__info__icon{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    width: 40px;
+                    height: 40px;
+                    border-radius: 50%;
+                    border: 2px solid var(--main-color);
+                    margin-right: 8px;
+                    flex-shrink: 0;
+                    color: var(--main-color);
+                }
+
+                .content__left__info__title{
+                    font-size: 14.5px;
+                    font-weight: 600;
+                    margin-bottom: 4px;
+                }
+
+                .content__left__info__desc{
+                    font-size: 14.5px;
+                }
+            }
+        }
+
+        .content__left__form{
+
+            .content__left__input,.content__left__textarea{
+                padding: 8px 12px;
+                font-size: 14.5px;
+                width: 100%;
+                border: 1px solid #cacaca;
+                border-radius: 4px;
+                outline: none;
+                background-color: transparent;
+                margin-bottom: 12px;
+            }
+
+            .content__left__textarea{
+                min-height: 100px;
+            }
+
+            .content__left__submit{
+                font-size: 14.5px;
+                background-color: var(--main-color);
+                color: white;
+                border-radius: 6px;
+                padding: 8px 14px;
+                cursor: pointer;
+
+                &:hover{
+                    opacity: 0.9;
+                }
+            }
+        }
+    }
+    
+}

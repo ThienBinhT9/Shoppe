@@ -1,0 +1,62 @@
+.wrapper{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 999999999000000000000000000;
+    background-color: rgba(0,0,0, 0.4);
+}
+
+.content{
+    position: relative;
+
+}
+
+.header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+}
+.icon-close{
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    cursor: pointer;
+}
+
+.body{
+
+
+}
+
+
+//transisition
+.scale{
+    animation: Scale 0.2s ease;
+}
+
+.leftToRight{
+    animation: LeftToRight 0.5s ease;
+}
+
+@keyframes Scale {
+    from{
+        transform: scale(0);
+    }
+    to{
+        transform: scale(1);
+    }
+}
+
+@keyframes LeftToRight {
+    from{
+        transform: translateX(-100%);
+    }
+    to{
+        transform: translateX(0);
+    }
+}
+

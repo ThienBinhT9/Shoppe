@@ -1,0 +1,28 @@
+.wrapper{
+    padding-bottom: 20px;
+    border-bottom: 1px solid #eaeaea;
+    margin-bottom: 26px;
+
+    @media (max-width:740px) {
+        padding: 12px;
+    }
+}
+
+.title{
+
+    @media (max-width:740px) {
+        font-size: 22px;
+        margin-bottom: 2px;
+    }
+
+    font-size: 25px;
+    font-weight: 500;
+    margin-bottom: 4px;
+}
+
+.title__sub{
+
+    @media (max-width:740px) {
+        font-size: 14px;
+    }
+}
